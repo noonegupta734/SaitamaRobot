@@ -77,7 +77,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://i.pinimg.com/originals/f8/eb/c4/f8ebc44b1617f33c629bb882f0f55c9d.png"
+SAITAMA_IMG = "https://raw.githubusercontent.com/noonegupta734/SaitamaRobot/master/photo_2020-06-08_06-17-20.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 The bot  is hosted on one of Heroku Servers and doesn't require any donations as of now but \
@@ -204,15 +204,8 @@ def start(update: Update, context: CallbackContext):
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
-                     [
-                         InlineKeyboardButton(
-                             text="🚑 Support Group",
-                             url=f"https://t.me/{SUPPORT_CHAT}"),
-                         InlineKeyboardButton(
-                             text="🔔 Updates Channel",
-                             url="https://t.me/OnePunchUpdates")
-                     ],
-                     [
+                     
+                    [
                          InlineKeyboardButton(
                              text="🧾 Getting started guide",
                              url="https://t.me/OnePunchUpdates/29")
